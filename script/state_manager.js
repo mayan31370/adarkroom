@@ -388,7 +388,7 @@ var StateManager = {
 		if(changed){
 			$SM.fireUpdate('income', true);
 		}
-		Engine._incomeTimeout = Engine.setTimeout($SM.collectIncome, 1000);
+		Engine._incomeTimeout = Engine.setTimeout($SM.collectIncome, 100);
 	},
 
 	//Thieves
