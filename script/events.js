@@ -117,7 +117,7 @@ var Events = {
 		}
 
 		// Set up the enemy attack timer
-		Events._enemyAttackTimer = Engine.setTimeout(Events.enemyAttack, scene.attackDelay * 1000);
+		Events._enemyAttackTimer = Engine.setTimeout(Events.enemyAttack, scene.attackDelay * 10000);
 	},
 
 	createEatMeatButton: function(cooldown) {
@@ -446,7 +446,7 @@ var Events = {
 			});
 		}
 
-		Events._enemyAttackTimer = Engine.setTimeout(Events.enemyAttack, scene.attackDelay * 1000);
+		Events._enemyAttackTimer = Engine.setTimeout(Events.enemyAttack, scene.attackDelay * 10000);
 	},
 
 	winFight: function() {
